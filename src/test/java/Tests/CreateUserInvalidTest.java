@@ -56,8 +56,7 @@ public class CreateUserInvalidTest {
 
         ResponseAccountFailed responseAccountFailed = response.body().as(ResponseAccountFailed.class);
 
-
-        Assert.assertNotNull(responseAccountFailed.getCode());
+        Assert.assertEquals(responseAccountFailed.getCode(), 1204);
         Assert.assertEquals(responseAccountFailed.getMessage(),"User exists!" );
 
     }

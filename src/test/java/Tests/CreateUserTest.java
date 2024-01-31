@@ -37,7 +37,7 @@ public class CreateUserTest {
         // Definim caracteristicile clientului
 
         RequestSpecification requestSpecification = RestAssured.given(); // configuram clientul cu anumite specificatii
-        requestSpecification.baseUri("https://demoqa.com");
+        requestSpecification.baseUri("https://demoqa.com");    // url-ul de baza
         requestSpecification.contentType("application/json");
 
         // Configuram request-ul
@@ -65,7 +65,8 @@ public class CreateUserTest {
 
         // Validam response body
 
-        ResponseAccountSuccess responseAccountSuccess = response.body().as(ResponseAccountSuccess.class);
+        ResponseAccountSuccess responseAccountSuccess = response.body().as(ResponseAccountSuccess.class);  // Luam valoarea de la server ca sa o salvam
+                                                                                                           // in clasa care ne intereseaza
 //        System.out.println(responseAccountSuccess.getUserID());
 
         Assert.assertNotNull(responseAccountSuccess.getUserID()); // verificam ca exista o valoare pt field ul id, care e dinamic, se tot schimba
