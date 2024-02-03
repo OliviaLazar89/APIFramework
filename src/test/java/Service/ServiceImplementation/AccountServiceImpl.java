@@ -1,8 +1,8 @@
 package Service.ServiceImplementation;
 
 import EndPoints.AccountEndPoints;
-import RequestObject.RequestAccount;
-import RequestObject.RequestAccountToken;
+import Objects.RequestObject.RequestAccount;
+import Objects.RequestObject.RequestAccountToken;
 import Service.APIService.AccountAPIService;
 import Service.InterfaceService.AccountServiceInterface;
 import io.restassured.response.Response;
@@ -18,14 +18,15 @@ public class AccountServiceImpl implements AccountServiceInterface {
 
     @Override
     public Response generateToken(RequestAccountToken requestAccountToken) {
-    accountAPIService = new AccountAPIService();
-    return accountAPIService.post(requestAccountToken, AccountEndPoints.ACCOUNT_TOKEN);
+        accountAPIService = new AccountAPIService();
+        return accountAPIService.post(requestAccountToken, AccountEndPoints.ACCOUNT_TOKEN);
     }
 
     @Override
     public Response getSpecificAccount(String userID, String token) {
         accountAPIService = new AccountAPIService();
-        String finalEndPoint = AccountEndPoints.ACCOUNT_USERSPECIFIC.replace("{userID}",userID);  // //face replace la endpoint-ul din AccountEndPoints
-        return accountAPIService.get(finalEndPoint, token);
+        String finalEndpoint = AccountEndPoints.ACCOUNT_SPECIFIC.replace("{userID}", userID); //face replace la endpoinul din AccountEndPoints
+        return accountAPIService.get(finalEndpoint, token);
+
     }
 }

@@ -1,7 +1,7 @@
 package Service.InterfaceService;
 
-import RequestObject.RequestAccount;
-import RequestObject.RequestAccountToken;
+import Objects.RequestObject.RequestAccount;
+import Objects.RequestObject.RequestAccountToken;
 import io.restassured.response.Response;
 
 public interface AccountServiceInterface {

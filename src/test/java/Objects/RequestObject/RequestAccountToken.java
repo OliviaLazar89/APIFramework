@@ -1,4 +1,4 @@
-package RequestObject;
+package Objects.RequestObject;
 
 public class RequestAccountToken {
 

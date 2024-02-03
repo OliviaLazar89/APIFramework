@@ -1,8 +1,7 @@
 package Tests;
 
-import RequestObject.RequestAccount;
-import ResponseObject.ResponseAccountFailed;
-import ResponseObject.ResponseAccountSuccess;
+import Objects.RequestObject.RequestAccount;
+import Objects.ResponseObject.ResponseAccountFailed;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;

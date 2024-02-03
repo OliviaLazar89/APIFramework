@@ -1,4 +1,4 @@
-package RequestObject;
+package Objects.RequestObject;
 
 public class RequestAccount {
 
@@ -25,4 +25,6 @@ public class RequestAccount {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
+

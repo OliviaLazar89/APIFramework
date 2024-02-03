@@ -2,8 +2,11 @@ package Rest;
 
 public class RestRequestType {
 
-    public static final String Request_post = "post";
-    public static final String Request_put = "put";
-    public static final String Request_get = "get";
-    public static final String Request_delete = "delete";
+    public static final String REQUEST_POST="post";
+    public static final String REQUEST_PUT="put";
+    public static final String REQUEST_GET="get";
+    public static final String REQUEST_DELETE="delete";
+
+
+
 }

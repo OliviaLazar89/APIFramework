@@ -16,7 +16,7 @@ public class CommonAPIService {
 
         // trebuie sa implementam logurile pt request si response
 
-        Response response = performRequest(RestRequestType.Request_post, requestSpecification, url);
+        Response response = performRequest(RestRequestType.REQUEST_POST, requestSpecification, url);
         return response;
     }
 
@@ -27,7 +27,7 @@ public class CommonAPIService {
 
         // trebuie sa implementam logurile pt request si response
 
-        Response response = performRequest(RestRequestType.Request_post, requestSpecification, url);
+        Response response = performRequest(RestRequestType.REQUEST_POST, requestSpecification, url);
         return response;
     }
 
@@ -38,7 +38,7 @@ public class CommonAPIService {
 
         // trebuie sa implementam logurile pt request si response
 
-        Response response = performRequest(RestRequestType.Request_get, requestSpecification, url);
+        Response response = performRequest(RestRequestType.REQUEST_GET, requestSpecification, url);
         return response;
     }
 

@@ -1,10 +1,10 @@
-package ResponseObject;
+package Objects.ResponseObject;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
-public class ResponseAccountFailed {
+public class ResponseAccountSuccess {
 
     @JsonProperty("userID")
     private String userID;      // asa se face maparea primei variabile pe care respone ul o are
@@ -12,10 +12,6 @@ public class ResponseAccountFailed {
     private String username;
     @JsonProperty("books")
     private List<BookObject> books;
-    @JsonProperty("code")
-    private Integer code;
-    @JsonProperty("message")
-    private String message;
 
     public String getUserID() {
         return userID;
@@ -27,13 +23,5 @@ public class ResponseAccountFailed {
 
     public List<BookObject> getBooks() {
         return books;
-    }
-
-    public Integer getCode() {
-        return code;
-    }
-
-    public String getMessage() {
-        return message;
     }
 }
